@@ -1,0 +1,29 @@
+{
+  "monorepo": true,
+  "root": "apps/tutor-platform",
+  "sourceRoot": "apps/tutor-platform/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/tutor-platform/tsconfig.app.json"
+  },
+  "projects": {
+    "tutor-platform": {
+      "type": "application",
+      "root": "apps/tutor-platform",
+      "entryFile": "main",
+      "sourceRoot": "apps/tutor-platform/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/tutor-platform/tsconfig.app.json"
+      }
+    },
+    "app": {
+      "type": "application",
+      "root": "apps/app",
+      "entryFile": "main",
+      "sourceRoot": "apps/app/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/app/tsconfig.app.json"
+      }
+    }
+  }
+}
